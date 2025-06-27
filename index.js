@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 });
 
 
-const taskMenu = () => {
+export const taskMenu = () => {
     console.log(chalk.blue('\n1-File Management'));
     console.log(chalk.blue('2-Modify String'));
     console.log(chalk.blue('3-Today\'s Weather'));
@@ -20,13 +20,13 @@ const taskMenu = () => {
 
 const handleOption = async (option) => {
     if (option === '1') {
-        fileManu()
-        taskMenu();
+     fileManu(rl)
+   
     } else if (option === '2') {
-        await string()
+        await string(rl)
         taskMenu();
     } else if (option === '3') {
-        await weather(); 
+        await weather(rl); 
         taskMenu(); 
     } else {
         console.log(chalk.red("Invalid Option. Please choose a correct one!"));

@@ -1,11 +1,8 @@
 // weather.js
 import axios from 'axios';
-import readline from 'readline';
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+
+
 
 const fetchWeather = async (city) => {
     try {
@@ -16,7 +13,7 @@ const fetchWeather = async (city) => {
     }
 }
 
-export const weather = async () => {
+export const weather = async (rl) => {
     return new Promise((resolve) => {
         rl.question("Enter city: ", async (city) => {
             await fetchWeather(city);
