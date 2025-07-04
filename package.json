@@ -1,5 +1,5 @@
 {
-  "name": "@hridoy0310/taskof3tool",
+  "name": "taskof3tool",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hridoy032003/TaskCLI"
+    "url": "https:// github.com/Hridoy032003/TaskCLI"
   },
   
   "keywords": [],
